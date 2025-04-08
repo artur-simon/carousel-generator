@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { CarouselStore, Slide, UserProfile } from '@/app/types'
+import { CarouselStore, Slide } from '@/app/types'
 
 const defaultSlide: Omit<Slide, 'id'> = {
   text: '',
