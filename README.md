@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinkedIn Carousel PDF Generator
+
+A web-based tool for creating and exporting LinkedIn carousels as PDFs. This application allows users to create visually appealing carousel posts with customizable slides, backgrounds, and text styling.
+
+## Features
+
+- Create multiple slides with custom text and styling
+- Upload and customize background images
+- Set background colors and opacity
+- Customize text color, size, and font
+- Add user profile information with profile picture
+- Real-time preview of slides
+- Export carousel as PDF
+- Responsive design
+
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Zustand (State Management)
+- html2canvas (PDF Generation)
+- jsPDF (PDF Creation)
+- React Color (Color Picker)
+- React Dropzone (File Upload)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/linkedin-carousel-pdf-generator.git
+cd linkedin-carousel-pdf-generator
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+1. Enter your profile information (name, handle, and profile picture)
+2. Create slides using the "Add Slide" button
+3. Customize each slide with:
+   - Text content
+   - Background color/image
+   - Text styling (color, size, font)
+   - Background opacity
+4. Preview your carousel in real-time
+5. Export the carousel as a PDF when ready
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## PDF Export
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The exported PDF will maintain the following specifications:
+- 1080x1080 pixels per slide (LinkedIn's recommended size)
+- High-quality image rendering
+- Preserved styling and formatting
+- One slide per page
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
